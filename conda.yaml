@@ -1,0 +1,25 @@
+# conda env create -f conda.yaml
+# python -m spacy download en_core_web_sm
+
+name: drag3
+channels:
+  - huggingface
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.9
+  - transformers[sklearn]
+  - pytorch
+  - pandas
+  - numpy
+  - spacy
+  - tqdm
+  - matplotlib
+  - scipy
+  - pyyaml
+  - plotly
+  - pip
+  - pip:
+    - scikit-learn
+    - openai
+    - tiktoken
