@@ -15,18 +15,6 @@ class PassageTokenizer():
         self.window_size = window_size
         self.step = step
     
-    # def get_passages(self, document: str) -> List[str]:
-    #     '''
-    #     Extract all passages from `document`
-    #     '''
-    #     doc_passages = []
-    #     doc = self.nlp(document)
-    #     sentences = [str(s) for s in doc.sents]
-    #     for i in range(0, len(sentences), self.step):
-    #         _t = " ".join(sentences[i:i+self.window_size])
-    #         doc_passages.append(_t)
-        
-    #     return doc_passages
 
     def get_passages(self, document: str) -> List[str]:
         '''

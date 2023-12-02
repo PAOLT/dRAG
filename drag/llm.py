@@ -34,11 +34,7 @@ class Embedder():
             docs = [self._preprocess(d) for d in docs]
             embs = [get_embedding(d, self.emb_engine) for d in docs]
             return embs
-    
-    # def embed(self, docs: str):
-    #     doc = self._preprocess(docs)
-    #     emb = get_embedding(doc, self.emb_engine)
-    #     return emb
+
     
     def similarity(self, x: List[float] , y: List[float]) -> float:
         cs = cosine_similarity(x, y)
