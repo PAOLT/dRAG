@@ -1,5 +1,0 @@
-api_key: 197b3cd666b74f69ae8bdc6c0b771c15
-endpoint: https://paolt-openai-sw.openai.azure.com/
-api_version: "2022-12-01"
-emb_model: emb
-chat_model: chat

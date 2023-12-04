@@ -26,11 +26,11 @@ except:
 
 search = Search(documents=documents, num_documents=5)
 
-with open('./table_conf.yml', "r") as file:
+with open('./table_config.yml', "r") as file:
         table_config = yaml.safe_load(file)
 cache = Cache(table_config)
 
-with open('./aoai_conf.yml', "r") as file:
+with open('./aoai_config.yml', "r") as file:
         aoai_config = yaml.safe_load(file)
 embedder = Embedder(aoai_config) 
 

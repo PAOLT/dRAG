@@ -160,3 +160,5 @@ cython_debug/
 #.idea/
 **/*.amltmp
 **/*.amlignore
+aoai_config.yml
+table_config.yml
